@@ -1,0 +1,53 @@
+*{
+    margin: 0;padding: 0; 
+  box-sizing: border-box;
+}
+.main{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.div_container{
+    padding: 10px;
+    border: 3px solid black;
+    box-shadow: 0px 10px 50px black;
+    text-align: center;
+}
+img{
+    width:20rem;
+    height: 20rem;
+    border-radius: 100%;
+    margin-bottom: 30px
+}
+#song_name{
+    font-family:sans-serif;
+    padding: 18px;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+#song_artist{
+    font-family:sans-serif;
+    padding: 15px ;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+.font{
+    display: flex;
+    justify-content: space-between;
+     cursor: pointer;
+}
+#pause{
+    display: block;
+}
+.anim{
+    animation:wave 3s linear infinite;
+}
+@keyframes wave{
+     from {
+        transform: rotate(0deg);
+    }
+     to {
+        transform: rotate(360deg);
+    }
+}
